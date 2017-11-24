@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="">
+<html class="theme-next muse use-motion" lang="zh">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,12 +79,16 @@
 
 
 
+<meta name="description" content="走走看看，写下当时的心得，记录日常点滴">
 <meta property="og:type" content="website">
 <meta property="og:title" content="OwliVendy&#39;s Blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="OwliVendy&#39;s Blog">
+<meta property="og:description" content="走走看看，写下当时的心得，记录日常点滴">
+<meta property="og:locale" content="zh">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OwliVendy&#39;s Blog">
+<meta name="twitter:description" content="走走看看，写下当时的心得，记录日常点滴">
 
 
 
@@ -132,7 +136,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh">
 
   
   
@@ -156,7 +160,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">三思而后行， 三思而后言</p>
       
   </div>
 
@@ -192,6 +196,36 @@
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Kategorien
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            Über
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
           </a>
         </li>
       
@@ -231,9 +265,9 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/24/2017-11-24/hexo安装部署/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="OwliVendy">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/32269?v=3&s=460">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -269,6 +303,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/其他/" itemprop="url" rel="index">
+                    <span itemprop="name">其他</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -316,10 +372,10 @@
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/owliVendy/xxx.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>这是用github作为部署的地址，其他方式到<a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a>查看。</p>
-<h2 id="使用命令行publish你的文章"><a href="#使用命令行publish你的文章" class="headerlink" title="使用命令行publish你的文章"></a>使用命令行publish你的文章</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate --deploy</span><br><span class="line">$ hexo deploy --generate</span><br></pre></td></tr></table></figure>
+<h2 id="使用命令行publish你的文章"><a href="#使用命令行publish你的文章" class="headerlink" title="使用命令行publish你的文章"></a>使用命令行publish你的文章</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate --deploy</span><br><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
 <p>这两个命令没有区别。</p>
 <p>其他配置信息可以去看官方文档<a href="https://hexo.io/docs/" target="_blank" rel="noopener">https://hexo.io/docs</a>。</p>
-
+<h1 id="END"><a href="#END" class="headerlink" title="END"></a>END</h1>
           
         
       
@@ -389,8 +445,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <img class="site-author-image" itemprop="image"
+                src="https://avatars1.githubusercontent.com/u/32269?v=3&s=460"
+                alt="OwliVendy" />
+            
+              <p class="site-author-name" itemprop="name">OwliVendy</p>
+              <p class="site-description motion-element" itemprop="description">走走看看，写下当时的心得，记录日常点滴</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -407,7 +467,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">Kategorien</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">Tags</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -447,7 +525,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">OwliVendy</span>
 
   
 </div>

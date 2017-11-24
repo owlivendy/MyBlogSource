@@ -1,5 +1,11 @@
 ---
-title: 使用hexo快速搭建博客 For Mac
+title: 使用hexo快速搭建博客 For Mac  
+comments: true
+tags: 
+- hexo blog
+- 搭建博客
+categories: 
+- 其他
 ---
 
 ## 准备安装环境
